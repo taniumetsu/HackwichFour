@@ -1,5 +1,5 @@
 //
-//  secondViewController.swift
+//  thirdViewController.swift
 //  HackwichFour
 //
 //  Created by Tani Umetsu on 9/19/23.
@@ -7,15 +7,20 @@
 
 import UIKit
 
-class secondViewController: UIViewController {
+class thirdViewController: UIViewController {
 
+    @IBOutlet weak var labelOne: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    
+
+    @IBAction func pressHereButtonPressed(_ sender: Any) {
+        labelOne.text = "1.Tonkatsudon 2. Zaru Udon 3. Strawberry Shortcake"
+        
+    }
     /*
     // MARK: - Navigation
 

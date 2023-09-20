@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYp-me-FNV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Classes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYp-me-FNV">
                                 <rect key="frame" x="33" y="139" width="327" height="322"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -77,6 +77,7 @@
                         <segue destination="pxL-kA-6Tg" kind="relationship" relationship="viewControllers" id="wcW-Z2-HlM"/>
                         <segue destination="YGT-d5-29I" kind="relationship" relationship="viewControllers" id="eMD-US-Hy7"/>
                         <segue destination="Sou-n5-grx" kind="relationship" relationship="viewControllers" id="xI3-WS-Hrf"/>
+                        <segue destination="bbO-3a-U21" kind="relationship" relationship="viewControllers" id="mfc-B9-ncx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avj-On-Epp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -90,6 +91,15 @@
                     <view key="view" contentMode="scaleToFill" id="r0C-gf-kTZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My To Do List" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9l-9m-caD">
+                                <rect key="frame" x="26" y="103" width="340" height="365"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="pfu-mP-Zwy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -99,11 +109,11 @@
             </objects>
             <point key="canvasLocation" x="756.48854961832058" y="428.87323943661971"/>
         </scene>
-        <!--Item 2-->
+        <!--My Classes-->
         <scene sceneID="fBo-sq-kkO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YGT-d5-29I" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="5TM-2d-K0b"/>
+                    <tabBarItem key="tabBarItem" title="My Classes" image="book.fill" catalog="system" id="5TM-2d-K0b"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rcM-G3-Blb">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -137,11 +147,11 @@
             </objects>
             <point key="canvasLocation" x="-170" y="-873"/>
         </scene>
-        <!--Item-->
+        <!--To Dos-->
         <scene sceneID="Q3l-F7-oBk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sou-n5-grx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Sf9-ag-Tbu"/>
+                    <tabBarItem key="tabBarItem" title="To Dos" image="list.clipboard.fill" catalog="system" id="Sf9-ag-Tbu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="duI-fS-ilF">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -156,8 +166,70 @@
             </objects>
             <point key="canvasLocation" x="-170.22900763358777" y="428.87323943661971"/>
         </scene>
+        <!--Third View Controller-->
+        <scene sceneID="KwF-90-ORF">
+            <objects>
+                <viewController id="SFL-kL-vCS" customClass="thirdViewController" customModule="HackwichFour" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XnL-mt-QxQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Favorite Foods" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tD4-IW-Ply">
+                                <rect key="frame" x="16" y="194" width="361" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACR-zp-ZPK">
+                                <rect key="frame" x="141" y="365" width="110" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Press here!"/>
+                                <connections>
+                                    <action selector="press:" destination="0vG-YH-qqo" eventType="touchUpInside" id="ADz-1T-fun"/>
+                                    <action selector="pressHereButtonPressed:" destination="0vG-YH-qqo" eventType="touchUpInside" id="KEs-Wf-Oxd"/>
+                                    <action selector="pressHereButtonPressed:" destination="SFL-kL-vCS" eventType="touchUpInside" id="UDg-TX-TJS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xWF-he-MAG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Uk-u8-4g8"/>
+                    <connections>
+                        <outlet property="labelOne" destination="tD4-IW-Ply" id="BW2-Yc-fpF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7WE-hO-qyO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="0vG-YH-qqo" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="739.69465648854964" y="1079.5774647887324"/>
+        </scene>
+        <!--Fave Foods-->
+        <scene sceneID="wzu-6n-jlG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bbO-3a-U21" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Fave Foods" image="fork.knife.circle.fill" catalog="system" id="RTj-QA-Ze1"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NIt-uB-VKZ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SFL-kL-vCS" kind="relationship" relationship="rootViewController" id="D9e-BO-T5t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1A-u5-RpA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-182.44274809160305" y="1079.5774647887324"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="fork.knife.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="list.clipboard.fill" catalog="system" width="103" height="128"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
